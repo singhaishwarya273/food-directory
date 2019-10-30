@@ -1,7 +1,6 @@
 import React ,{useState} from 'react';
-import {GetDetail, SetDetail} from '../Actions';
 import {withRouter} from 'react-router-dom';
-import { connect } from "react-redux";
+
 
 
 const Search = (props)  =>

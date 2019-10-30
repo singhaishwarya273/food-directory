@@ -26,12 +26,12 @@ const RandomRecipe= (props) =>
 	
 	return(
 	<>
-	<div className= {style.recipies} >
-	{props.recipe ?(<div className = "recipe" style= {{backgroundColor:"white"}}>
-	<div className="row " >
+	<div className= {style.recipe} >
+	{props.recipe ?(<div className = {style.recipies} >
+	<div className={style.row} >
 	
-			<div className="col-3"></div>
-			<div className=" col-3">
+			
+		
 				<img src={props.recipe['strMealThumb']} alt="Meal Image"/>
 				
 				{props.recipe['strCategory']
@@ -44,25 +44,25 @@ const RandomRecipe= (props) =>
 						? <p><strong>Tags:</strong> {props.recipe['strTags'].split(',').join(', ')}</p>
 						: ''
 				}
-				<h5>Ingredients:</h5>
-				<ul>
+				<div className= "ingredient" >
+				<h4>Ingredients:</h4>
+				
 					{ing()}
-				</ul>
+				
 			</div>
 			
-			<div className={style.col-3}>
+			<div className={style.Meal}>
 				<h4>{props.recipe.strMeal}</h4>
 				<p>{props.recipe.strInstructions}</p>
-			</div>ma
-			
-			<div className= {style.col-3}></div>
+			</div>
+			<hr></hr>
 		</div>
 		{props.recipe.strYoutube? (<div className="row">
-			<h5>Video Recipe</h5>
+			<h4 style= {{paddingBottom:'10px'}}>Video Recipe</h4>
 			<div className="videoWrapper">
-				<iframe width="420" height="315"
-				src="https://www.youtube.com/embed/{props.recipe.strYoutube.slice(-11)}">
-				</iframe>
+				<iframe width="560" height="315" src={`https://www.youtube.com/embed/${props.recipe.strYoutube.slice(-11)}`}
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+			picture-in-picture" allowfullscreen> </iframe>
 			</div>
 		</div>):("")}
 		

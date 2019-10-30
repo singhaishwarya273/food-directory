@@ -6,12 +6,14 @@ import { Link } from "react-router-dom";
 const RecipeThumb= ({meal}) =>
 {
 return(
+<div className= 'grid-item'>
 <Link to = {{pathname: `/recipe/${meal.strMeal}`}}>
-<div className= 'thumb'>
+
 <img src = {meal['strMealThumb']} alt ={meal['strMeal']} />
 <p className = "MealName"> {meal['strMeal']}</p>
-</div>
+
 </Link>
+</div>
 );
 
 };

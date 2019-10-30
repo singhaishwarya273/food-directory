@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react';
 
 import styles from './Recipe.module.css';
-import Hero from './Hero';
 import Spinner from './Spinner';
 
 import { connect } from "react-redux";
@@ -36,26 +35,26 @@ return(
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   width: '60%'}} >
-	<div className = {styles.recipes} >
+  	<div className = {styles.recipes} style = {{backgroundColor: "rgba(255,255,255, 0.3)"}}  >
 	<div className={styles.row} >
 			
-			<div className= "details"	
+			<div className= "ingredient"	
 				>
-				<h5>Ingredients:</h5>
+				<h4>Ingredients:</h4>
 				
 				
 					{ing()}
 					
 			</div>
 			
-			<div className={styles.col-6}>
+			<div className={styles.Meal}>
 				<h4>{props.food.strMeal}</h4>
-				<p>{props.food.strInstructions}</p>
+				<p style={{textAlign:'Left', padding: '10px'}}>{props.food.strInstructions}</p>
 			</div>	
 		
 		</div>
 		{props.food.strYoutube? (<div className="row">
-			<h5>Video Recipe</h5>
+			<h4 style= {{paddingBottom:'5px'}}>Video Recipe</h4>
 			<div className="videoWrapper">
 			<iframe width="560" height="315" src={`https://www.youtube.com/embed/${props.food.strYoutube.slice(-11)}`}
 			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 

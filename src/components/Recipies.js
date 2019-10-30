@@ -11,7 +11,7 @@ import RecipeThumb from './RecipeThumb';
 import {GetSearchRecipies, SetSearchRecipies} from '../Actions';
 
 
-
+import  './Recipies.css';
 
 const Recipies=(props)=>
 
@@ -24,12 +24,15 @@ const Recipies=(props)=>
 		console.log('ready');
 		props.GetSearchRecipies(content,searc);
 	},[content,searc]);
+	
+	const imagess = props.foods.map(m=> <RecipeThumb key ={m.idMeal} meal={m}/>);
+	
 return( 
-<div>
-{props.foods? (<>
-{props.foods.map(m=> <RecipeThumb key ={m.idMeal} meal={m}/>)}
-</>):""}
- </div>
+<>
+{props.foods? (<div className="imagelist">
+{imagess}
+</div>):<div></div>}
+ </>
 );
 }
 

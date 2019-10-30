@@ -50,6 +50,7 @@ const App =() => {
    <Route exact path = "/recipe/:name"component = {Recipe}/>
    <Route exact path = "/recipies/:content/:search" component = {Recipies}/>
    
+   
   </Switch>
 		</div>
   );
