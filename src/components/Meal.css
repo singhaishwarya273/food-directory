@@ -1,0 +1,39 @@
+
+
+
+
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+h1 {
+	color:blue;
+	margin: 0;
+}
+
+.info {background-color: #2196F3;
+margin-top: 50px;
+padding: 10px} /* Blue */
+.info:hover {background: #0b7dda;}
+
+h3 {
+	margin: 10px 0;
+	color: Red;
+}
+
+li {
+	margin-bottom: 0;
+}
+
+.meal {
+	margin: 20px 0;
+}
+
+.text-center {
+	text-align: center;
+}
