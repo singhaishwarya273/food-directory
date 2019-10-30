@@ -21,7 +21,7 @@ const App =() => {
   return (
   <div>
   <div className="navbar">
-  <h1> aish</h1>
+  
   <Link to ="/" className="active">Home</Link>
   <div className="dropdown">
     <button className="dropbtn">Categories 
