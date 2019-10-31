@@ -17,6 +17,10 @@ import Meal from './Meal';
 const App =() => {	
 	console.log(Data['CATEGORIES']);
 	
+	const myFunction=()=>
+	{
+		
+	};
 	
 	//const Rotate= arr => arr.map(a => <Link to ="/food/") 
   return (

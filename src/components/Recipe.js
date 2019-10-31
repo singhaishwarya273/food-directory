@@ -34,7 +34,7 @@ return(
  backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-  width: '60%'}} >
+  width: '100%'}} >
   	<div className = {styles.recipes} style = {{backgroundColor: "rgba(255,255,255, 0.3)"}}  >
 	<div className={styles.row} >
 			

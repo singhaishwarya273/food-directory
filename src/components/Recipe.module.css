@@ -4,12 +4,13 @@
 	
 	  border-radius: 5px;
 	display: flex;
+
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 50px 300px;
 	width: 50%;
-	min-height: calc(100vh - 60px);
+	min-height: calc(100v);
 	
 }
 
