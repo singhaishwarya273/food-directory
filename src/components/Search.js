@@ -28,10 +28,10 @@ const submitChange= (e) => {
 	return(
 	
 <form className="search-container" onSubmit={()=> submitChange(`/recipe/${query}`)}>
-    <div className= "Header">
+    
       <input type="text" placeholder="Search.." onChange={updateSearch} value= {query} required/>
       <button type="submit" ><i className="fa fa-search"></i></button>
-    </div>
+ 
   </form>
 
  );

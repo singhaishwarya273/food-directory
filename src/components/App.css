@@ -1,6 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
+
 body {
 	height:100%;	
   margin: 0;
@@ -114,7 +115,25 @@ justify-content: center;
 
 
   
-  
+  @media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+  }
+  .navbar .dropdown  {
+    float: none;
+  }
+  .navbar a, .navbar .dropdown button, .navbar input[type=text], .navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
   
   
   

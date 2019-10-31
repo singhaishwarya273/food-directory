@@ -53,9 +53,9 @@ return(
 			</div>	
 		
 		</div>
-		{props.food.strYoutube? (<div className="row">
+		{props.food.strYoutube? (<div className={styles.row}>
 			<h4 style= {{paddingBottom:'5px'}}>Video Recipe</h4>
-			<div className="videoWrapper">
+			<div className={styles.videoWrapper}>
 			<iframe width="560" height="315" src={`https://www.youtube.com/embed/${props.food.strYoutube.slice(-11)}`}
 			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
 			picture-in-picture" allowfullscreen></iframe>

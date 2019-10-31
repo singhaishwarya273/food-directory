@@ -17,21 +17,13 @@ import Meal from './Meal';
 const App =() => {	
 	console.log(Data['CATEGORIES']);
 	
+	
 	//const Rotate= arr => arr.map(a => <Link to ="/food/") 
   return (
   <div>
   <div className="navbar">
   
   <Link to ="/" className="active">Home</Link>
-  <div className="dropdown">
-    <button className="dropbtn">Categories 
-      <i className="fa fa-caret-down"></i>
-    </button>
-    <div className="dropdown-content">
-	{Data['CATEGORIES'].map(a=> <Link to ={`/recipies/c/${a.value}`}> {a.label}</Link>
-	)}
-    </div>
-  </div>
 <div className="dropdown">  
 	  <button className="dropbtn">Region
       <i className="fa fa-caret-down"></i>
@@ -41,9 +33,19 @@ const App =() => {
 	)}
     </div>
 	</div>
+	 <div className="dropdown">
+    <button className="dropbtn">Categories 
+      <i className="fa fa-caret-down"></i>
+    </button>
+    <div className="dropdown-content">
+	{Data['CATEGORIES'].map(a=> <Link to ={`/recipies/c/${a.value}`}> {a.label}</Link>
+	)}
+    </div>
+  </div>
 
 	<Search />
-  </div>
+	
+	</div>
  
   <Switch>
   <Route exact path = "/" component ={Meal}/>
