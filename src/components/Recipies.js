@@ -10,12 +10,13 @@ import "./Recipies.css";
 const Recipies = props => {
   const content = props.match.params.content;
   const searc = props.match.params.search.replace(/__/g, "_/_");
+  const { GetSearchRecipies } = props;
 
   console.log(searc);
   useEffect(() => {
     console.log("ready");
-    props.GetSearchRecipies(content, searc);
-  }, [content, searc]);
+    GetSearchRecipies(content, searc);
+  }, [content, searc, GetSearchRecipies]);
 
   const imagess = props.foods.map(m => <RecipeThumb key={m.idMeal} meal={m} />);
 

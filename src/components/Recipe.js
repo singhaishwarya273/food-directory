@@ -10,9 +10,10 @@ import { GetDetail, SetDetail } from "../Actions";
 const Recipe = props => {
   const content = props.match.params.name;
   console.log(props.match.params);
+  const { GetDetail } = props;
   useEffect(() => {
-    props.GetDetail(content);
-  }, [content]);
+    GetDetail(content);
+  }, [content, GetDetail]);
 
   const ing = () => {
     let indegrients = [];
@@ -63,6 +64,7 @@ const Recipe = props => {
                 <h4 style={{ paddingBottom: "5px" }}>Video Recipe</h4>
                 <div className={styles.videoWrapper}>
                   <iframe
+                    title="Recipe Video"
                     width="560"
                     height="315"
                     src={`https://www.youtube.com/embed/${props.food.strYoutube.slice(

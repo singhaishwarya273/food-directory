@@ -9,6 +9,6 @@ const reducer = (state = initState, action) => {
     default:
       return state;
   }
-  console.log(state);
+  // console.log(state);
 };
 export default reducer;

@@ -30,7 +30,7 @@ const RandomRecipe = props => {
         {props.recipe ? (
           <div className={style.recipies}>
             <div className={style.row}>
-              <img src={props.recipe["strMealThumb"]} alt="Meal Image" />
+              <img src={props.recipe["strMealThumb"]} alt="Meal" />
 
               {props.recipe["strCategory"] ? (
                 <p>
@@ -73,6 +73,7 @@ const RandomRecipe = props => {
                 <h4 style={{ paddingBottom: "10px" }}>Video Recipe</h4>
                 <div className="videoWrapper">
                   <iframe
+                    title="Recepie Video"
                     width="560"
                     height="315"
                     src={`https://www.youtube.com/embed/${props.recipe.strYoutube.slice(
