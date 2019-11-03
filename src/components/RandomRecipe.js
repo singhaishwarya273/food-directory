@@ -55,15 +55,15 @@ const RandomRecipe= (props) =>
 			</div>
 			
 			<div className="Meal">
-				<h4>{props.recipe.strMeal}</h4>
-				<div className="instruction" style= {{textAlign:'Left', padding:'10px'}}>
+				<u><b><h4>{props.recipe.strMeal}</h4></b></u>
+				<div className="instruction" style= {{textAlign:'Left', marginTop:0, padding:'1px'}}>
 				<p>{props.recipe.strInstructions}</p>
 				</div>
 			</div>
 			<hr></hr>
 		
 	
-		{props.recipe.strYoutube? (<div  style={{alignItem:"center"}}>
+		{props.recipe.strYoutube? (<div className="videoWrapper" style={{alignItem:"center"}}>
 			<h4 style= {{paddingBottom:'10px'}}>Video Recipe</h4>
 			
 				<iframe width="420" height="315" src={`https://www.youtube.com/embed/${props.recipe.strYoutube.slice(-11)}`}

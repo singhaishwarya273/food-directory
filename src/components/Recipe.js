@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import styles from "./Recipe.module.css";
+import "./RandomRecipe.css";
 import Spinner from "./Spinner";
 
 import { connect } from "react-redux";
@@ -32,7 +32,7 @@ const Recipe = props => {
     <>
       {props.food ? (
         <div
-          className={styles.recipe}
+          
           style={{
             backgroundImage: `url(${props.food.strMealThumb})`,
             backgroundPosition: "center",
@@ -42,30 +42,31 @@ const Recipe = props => {
           }}
         >
           <div
-            className={styles.recipes}
+            className="row"
             style={{ backgroundColor: "rgba(255,255,255, 0.3)" }}
           >
-            <div className={styles.row}>
+            <div className="col-6">
               <div className="ingredient">
                 <h4>Ingredients:</h4>
 
                 {ing()}
               </div>
-
-              <div className={styles.Meal}>
-                <h4>{props.food.strMeal}</h4>
-                <p style={{ textAlign: "Left", padding: "10px" }}>
+              <hr>
+                </hr>
+              <div className="Meal" >
+               <u> <h4>{props.food.strMeal}</h4></u>
+                <p style={{ textAlign: "Left", padding: "1px" }}>
                   {props.food.strInstructions}
                 </p>
               </div>
-            </div>
+          
             {props.food.strYoutube ? (
-              <div className={styles.row}>
+              <div className= "videoWrapper" style={{alignItem:"center"}}>
                 <h4 style={{ paddingBottom: "5px" }}>Video Recipe</h4>
-                <div className={styles.videoWrapper}>
+                
                   <iframe
                     title="Recipe Video"
-                    width="560"
+                    width="420"
                     height="315"
                     src={`https://www.youtube.com/embed/${props.food.strYoutube.slice(
                       -11
@@ -75,12 +76,12 @@ const Recipe = props => {
 			picture-in-picture"
                     allowfullscreen
                   ></iframe>
-                </div>
+                
               </div>
             ) : (
-              ""
+              " "
             )}
-          </div>{" "}
+          </div></div>
         </div>
       ) : (
         <Spinner></Spinner>
