@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'	);
+
+
+
+
+
+.row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 300px;
+	width: 100%;
+	min-height: calc(100vh);
+}	
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+   .col-6 {
+	    margin:20px;
+  padding:20px;
+	 background-size:cover;
+	 display: flex;
+	 
+	flex-direction: column;
+	 width: 90%;
+	justify-content: center;
+	background-color :rgba(255,255,255, 0.7); 
+ }
+ .recipe .recipies .row img {
+	padding-top: 20px;
+	max-width: 50%;
+}
+
+
+
+li {
+	padding-left:40px;
+	text-align:left;
+	margin-bottom: 0;
+}
+
+
+.recipe .recipies .row .Meal p{
+	margin-top: 10px ;
+	margin-bottom:20px;
+}
+
+[class*="col-"] {
+  width: 85%;
+  margin:10px;
+  padding:10px;
+}
+iframe:{
+	width: 20;
+	
+height: 10%;
+	
+	
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  
+  .col-7 {width: 58.33%;}
+
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
