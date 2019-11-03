@@ -1,108 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'	);
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
-.recipe{
-	
-	  border-radius: 5px;
-	display: flex;
+.recipe {
+  border-radius: 5px;
+  display: flex;
 
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 50px 300px;
-	width: 50%;
-	min-height: calc(100v);
-	
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 300px;
+  width: 50%;
+  min-height: calc(100v);
 }
 
 .recipe .recipes .row li {
-	padding-left:40px;
-	text-align:left;
-	margin-bottom: 0;
+  padding-left: 40px;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-.recipe .recipes .row .Meal p{
-	margin-top: 10px ;
-	margin-bottom:20px;
+.recipe .recipes .row .Meal p {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .recipe .recipes .row .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 10px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 10px;
+  height: 0;
 }
 
 .recipe .recipes .row .videoWrapper iframe {
-	position: absolute;
-	
-	padding-left: 100px;
-	left: 0;
-	width: 75%;
-	height: 90%;
+  position: absolute;
+
+  padding-left: 100px;
+  left: 0;
+  width: 75%;
+  height: 90%;
 }
 
- @media screen and (max-width: 600px)
- {
-	.recipe .recipes .row{
-		
-		
-	float:none;
-	display:block;
+@media screen and (max-width: 600px) {
+  .recipe .recipes .row {
+    float: none;
+    display: block;
+  }
 
-	
+  .recipe {
+    float: none;
+    display: block;
+    margin: 0px;
+    padding: 120px;
+    padding-top: 10px;
+  }
 
+  .recipe .recipes {
+    float: none;
+    display: block;
+  }
 
-	}
-	
-	.recipe  {
-	float:none;
-	display:block;
-	margin:0px;
-	padding: 120px;
-	padding-top :10px;
+  .recipe .recipes .row .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+  }
 
-	
-	}
-
-.recipe .recipes {
-	float:none;
-	display:block;
-	
-	}	
-	
-.recipe .recipes .row .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 0px;
-	height: 0;
+  .recipe .recipes .row .videoWrapper iframe {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    width: 80%;
+    height: 90%;
+  }
 }
-
-.recipe .recipes .row .videoWrapper iframe {
-	position: absolute;
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right: 10px;
-	padding-bottom:10px;
-	left: 0;
-	width: 80%;
-	height: 90%;
-}
-	 
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
