@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic");
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Bad+Script|Permanent+Marker&display=swap');
 
 
 
@@ -6,10 +7,10 @@ body {
 	height:100%;	
   margin: 0;
   text-align:center;
-  
+  font-size: 15px;
       background: linear-gradient(0deg,#040733,#250707);
 background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+font-family: 'Bad Script', cursive;
 justify-content: center;
     min-height: 100vh;
   
@@ -17,8 +18,10 @@ justify-content: center;
 
 
 .navbar {
+  font-family: 'Bad Script', cursive;
+
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255,0,0,0.9);
   background-size: cover;
   
 }
@@ -53,6 +56,8 @@ justify-content: center;
 }
 
 .dropdown-content {
+  overflow-y:auto;
+  height:310px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -78,7 +83,7 @@ justify-content: center;
 
 	
 	min-height: calc(100vh);
-	background: url("./background.jpg")center/cover no-repeat;
+  background: url("./Recipe.jpg")center/cover no-repeat;
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -142,8 +147,4 @@ justify-content: center;
     border: 1px solid #ccc;  
   }
 }
-  
-  
-  
-  
   

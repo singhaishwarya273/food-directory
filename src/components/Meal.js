@@ -20,11 +20,11 @@ return(
 <Hero> 
 <div className="container">
 	<div className="new text-center">
-		<h1 style = {{ color:'rgb(128,0,0)', marginTop:"50px"}}>
+		<h1 style = {{ color:'rgb(255,255,0)'	,paddingTop:'50px'}}>
 			Feeling hungry?
 		</h1 > 
-		<h3 style = {{ color:'rgb(128,0,0)'}}>Get a random meal by clicking below</h3>
-		<button className="btn info" style = {{ BackgroundColor:'rgb(128,0,0)'}} onClick= {getMeal}>Get Random Meal  </button>
+		<h1 style = {{ color:'rgb(255,255,0)'	}}>Get a random meal by clicking below</h1>
+		<button className="btn info" style = {{ BackgroundColor:'rgb(255,0,0,1.0)'}} onClick= {getMeal}>Get Random Meal  </button>
 	</div>
 	<RandomRecipe recipe= {recipe} click= {getMeal}/>
 

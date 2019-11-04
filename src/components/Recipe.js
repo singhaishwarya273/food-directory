@@ -47,7 +47,7 @@ const Recipe = props => {
           >
             <div className="col-6">
               <div className="ingredient">
-                <h4>Ingredients:</h4>
+                <h4 >Ingredients:</h4>
 
                 {ing()}
               </div>
