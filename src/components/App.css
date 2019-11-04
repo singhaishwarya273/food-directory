@@ -4,7 +4,7 @@
 
 
 body {
-	height:100%;	
+
   margin: 0;
   text-align:center;
   font-size: 15px;
@@ -83,7 +83,7 @@ justify-content: center;
 
 	
 	min-height: calc(100vh);
-  background: url("./Recipe.jpg")center/cover no-repeat;
+  background: url("./recipeNew.jpg")center/cover no-repeat;
 	display:flex;
 	align-items: center;
 	justify-content: center;
